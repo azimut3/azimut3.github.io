@@ -1,0 +1,21 @@
+.pill{
+    border-radius: 6px;
+    padding: 6px 14px;    
+    display: table;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 6px;
+    margin-right: 7px;
+  }
+
+  .skillPill{
+    background-color: #9cb770;
+  }
+  .apiPill{
+    background-color: #70abb7;
+  }
+
+.pillBox{
+  display: flex;
+  flex-flow: wrap;
+}

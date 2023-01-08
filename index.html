@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="generator" content="pandoc"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <title>resume</title>
+    <style type="text/css">
+        code {
+            white-space: pre-wrap;
+        }
+
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+
+        span.underline {
+            text-decoration: underline;
+        }
+
+        div.column {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        /*
+         * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+         *
+         * CSS for making a resume with pandoc. Inspired by moderncv.
+         *
+         * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+         * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+         */
+
+        /* Whole document */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            background: #FFFFFF;
+            padding: 10px 10px 10px 10px;
+        }
+
+        /* Title of the resume */
+        h1 {
+            font-size: 55px;
+            color: #757575;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* h1:hover { */
+        /*     background-color: #757575; */
+        /*     color: #FFFFFF; */
+        /*     text-shadow: 1px 1px 1px #333; */
+        /* } */
+
+        /* Titles of categories */
+        h2 {
+            /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+            color: #397249;
+        }
+
+        /* There is a bar just before each category */
+        h2:before {
+            content: "";
+            display: inline-block;
+            margin-right: 1%;
+            width: 16%;
+            height: 10px;
+            /* This is called "rulecolor" in the ConTeXt stylesheet. */
+            background-color: #9CB770;
+        }
+
+        /* h2:hover { */
+        /*     background-color: #397249; */
+        /*     color: #FFFFFF; */
+        /*     text-shadow: 1px 1px 1px #333; */
+        /* } */
+
+        /* Definitions */
+        dt {
+            float: left;
+            clear: left;
+            width: 17%;
+            font-weight: bold;
+        }
+
+        dd {
+            margin-left: 17%;
+            margin-bottom: 7px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 7px;
+        }
+
+        /* Blockquotes */
+        blockquote {
+            text-align: center
+        }
+
+        /* Links */
+        a {
+            text-decoration: none;
+            color: #397249;
+        }
+
+        a:hover, a:active {
+            background-color: #397249;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px #333;
+        }
+
+        /* Horizontal separators */
+        hr {
+            color: #A6A6A6;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<style type="text/css">
+    .pill {
+        border-radius: 6px;
+        padding: 6px 14px;
+        display: table;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 6px;
+        margin-right: 7px;
+    }
+
+    .skillPill {
+        background-color: #9cb770;
+    }
+
+    .apiPill {
+        background-color: #70abb7;
+    }
+
+    .pillBox {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .headerBlock {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .contactsBlock {
+        margin-top: 30px;
+    }
+
+    .contactItem {
+        clear: both;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        padding-right: 34px;
+        padding-top: 5px;
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    .contactIcon {
+        display: block;
+        height: 20px;
+        width: 20px;
+    }
+
+    .contactInfo {
+        text-decoration: none;
+        color: #397249;
+        clear: both;
+        width: 100%;
+        padding-right: 9px;
+    }
+</style>
+<div class="headerBlock">
+    <div>
+        <p align="center">
+            <img style="width: 255px;"
+                 src="https://ihor-data-bucket.s3.eu-central-1.amazonaws.com/rsz_circle-cropped.png">
+        </p>
+    </div>
+    <div class="contactsBlock">
+        <div class="contactItem">
+            <img src="https://d.novoresume.com/yna_static/svg/contact/email/a-56.svg" class="contactIcon"/> <a
+                class="contactInfo">i.horchynskyi@gmail.com</a>
+        </div>
+        <div class="contactItem">
+            <img src="https://d.novoresume.com/yna_static/svg/contact/address_mask/a-6.svg" class="contactIcon"/> <a
+                class="contactInfo">Odessa, Ukraine</a>
+        </div>
+        <div class="contactItem">
+            <img src="https://d.novoresume.com/yna_static/svg/contact/linkedin/a-5.svg" class="contactIcon"/> <a
+                class="contactInfo">linkedin.com/in/i-horchynskyi</a>
+        </div>
+        <div class="contactItem">
+            <img src="https://d.novoresume.com/yna_static/svg/contact/github/a-3.svg" class="contactIcon"/> <a
+                class="contactInfo">github.com/azimut3</a>
+        </div>
+    </div>
+</div>
+<h1 id="horchynskyi-ihor">Horchynskyi Ihor</h1>
+<hr/>
+<p>I have been developing Java apps for more than 2 years and almost 2-year developing Salesforce applications. I am
+    experienced with Java, Apex, JavaScript, HTML, CSS, Git, Maven, Spring, Hibernate, Docker, various APIs, JUnit,
+    Linux and Windows operating systems, regex expressions.<br> I am a responsible, persistent person who is seeking for
+    a way to implement good modern solutions for business problems. Always open to new ideas and ways to improve my
+    skills.</p>
+<hr/>
+<h2 id="education">Education</h2>
+<dl>
+    <dt>2018-2022 (expected)</dt>
+    <dd><p><strong>Ph.D. of Transport Technologies</strong>; Odessa National Maritime University</p>
+        <p><em>Thesis title: Methods of organization and management of grain sea terminals</em></p>
+    </dd>
+    <dt>2012-2018</dt>
+    <dd><p><strong>Master Degree of Transport Technologies</strong>; Odessa National Maritime University</p>
+        <p><em>Thesis title: Analysis of the efficiency of the grain terminal using simulation modeling</em></p>
+    </dd>
+</dl>
+<h2 id="experience">Experience</h2>
+<dl>
+	<dt>08/2021 - <br>Present</dt>
+    <dd><p><strong>DataArt</strong> - Salesforce developer</p>
+        <p>Working as a developer / team lead on a projects of a different scales involving complex development strategies 
+		and release management.</p>
+    </dd>
+    <dt>10/2019 - <br>08/2021</dt>
+    <dd><p><strong>Koroka Solutions</strong> - Salesforce developer</p>
+        <p>As a certified Salesforce developer, working solo and in small teams, developing salesforce integrations with
+            outer and inner services within salesforce, implementing business logic solving complex customers’ specific
+            tasks. Tasks vary from backend only to developing frontend and backend together. Mainly developing Lightning
+            Web Components and creating 3-rd party integrations with Salesforce (Apex).</p>
+    </dd>
+    <dt>07/2019 - <br>08/2019</dt>
+    <dd><p><strong>KeepSolid</strong> - Summer internship (Android development)</p>
+        <p>As a part of summer internship camp I took a part in a course of developing simple android apps covering
+            android developing basis and development principles.</p>
+    </dd>
+    <dt>06/2018 - <br>Present</dt>
+    <dd><p><strong>Freelance</strong> - Java Developer</p>
+        <p>Being passionate about programming I developed small desktop and server-side applications occasionally having
+            some clients. As a field of my interests I developed few Telegram bots, desktop self-management and
+            warehouse management apps, simulation models using Java.</p>
+    </dd>
+</dl>
+<h2 id="skills">Skills</h2>
+<div class="pillBox">
+    <div class="pill skillPill">
+        Java
+    </div>
+    <div class="pill skillPill">
+        Spring Boot
+    </div>
+    <div class="pill skillPill">
+        Spring Data
+    </div>
+    <div class="pill skillPill">
+        Spring Web
+    </div>
+    <div class="pill skillPill">
+        Thymeleaf
+    </div>
+    <div class="pill skillPill">
+        React
+    </div>
+    <div class="pill skillPill">
+        Hibernate
+    </div>
+    <div class="pill skillPill">
+        Project Lombock
+    </div>
+    <div class="pill skillPill">
+        Salesforce
+    </div>
+    <div class="pill skillPill">
+        Apex
+    </div>
+    <div class="pill skillPill">
+        LWC
+    </div>
+    <div class="pill skillPill">
+        Java Script
+    </div>
+    <div class="pill skillPill">
+        CSS
+    </div>
+    <div class="pill skillPill">
+        Regex expressions
+    </div>
+    <div class="pill skillPill">
+        Git
+    </div>
+    <div class="pill skillPill">
+        Maven
+    </div>
+    <div class="pill skillPill">
+        Linux and Windows
+    </div>
+</div>
+<h2 id="apis">Api’s</h2>
+<div class="pillBox">
+    <div class="pill apiPill">
+        Aws s3
+    </div>
+    <div class="pill apiPill">
+        Google Sheets
+    </div>
+    <div class="pill apiPill">
+        Telegram
+    </div>
+    <div class="pill apiPill">
+        Convetio
+    </div>
+    <div class="pill apiPill">
+        ConvertApi
+    </div>
+    <div class="pill apiPill">
+        OpenCage Geocoder
+    </div>
+    <div class="pill apiPill">
+        OpenWeatherMap
+    </div>
+</div>
+<h2 id="achievments-and-sertificates">Achievments and sertificates</h2>
+<p><strong>Salesforce Developer I Sertificate</strong> (01/2020 - Present) - Salesforce developer sertification.</p>
+<h2 id="my-projects">My Projects</h2>
+<dl>
+    <dt><strong>My Cookery notes</strong> <br>03/2018 - 06/2018</dt>
+    <dd>
+        <div style="margin-left: 5px">
+            Desktop app to manage my culinary rootine.
+        </div>
+        <ul>
+            <li>Tech stack: Java Swing, Regex, XML.</li>
+        </ul>
+    </dd>
+    <dt><strong>OpcBot</strong> <br>05/2018 - 01/2019</dt>
+    <dd>
+        <div style="margin-left: 5px">
+            Telegram bot hosted on Heroku for monitoring of Odessa port vessels and weather.
+        </div>
+        <ul>
+            <li>Tech stack: Hibernate, Heroku, Telegram API, OpenWeatherMap, OpenCage Geocoder, PostgreSQL, XML,
+                Regex.
+            </li>
+        </ul>
+    </dd>
+    <dt><strong>UnileverForTeam</strong> <br>04/2019 - Present</dt>
+    <dd>
+        <div style="margin-left: 5px">
+            Telegram bot. Inner CRM system hosted on Heroku.
+        </div>
+        <ul>
+            <li>Tech stack: Spring Boot, Spring Data, Spring Web , JUnit 5, Project Lombok, Log4J2, Telegram API, Google
+                Sheets API, OpenCage Geocoder API, Regex.
+            </li>
+        </ul>
+    </dd>
+    <dt><strong>Admin Panel for UniTeamBot</strong> <br>04/2019 - Present</dt>
+    <dd>
+        <div style="margin-left: 5px">
+            Desktop app. Admin panel for bot management.
+        </div>
+        <ul>
+            <li>Tech stack: Spring Data, REST API, JavaFX, Project Lombock, Log4J2, JUnit 5.</li>
+        </ul>
+    </dd>
+
+    <dt><strong>Houston Bar Bot</strong> <br>08/2020 - 09/2020</dt>
+    <dd>
+        <div style="margin-left: 5px">
+            Telegram Bot Simple informational bot for Houston Bar hosted on Heroku.
+        </div>
+        <ul>
+            <li>Tech stack: Spring Boot, Spring Data, Telegram API.</li>
+        </ul>
+    </dd>
+
+    <dt><strong>Simulation Model Data Analytics App</strong> <br>07/2020 - Present</dt>
+    <dd>
+        <div style="margin-left: 5px">
+            Web site. Simple app to make analytics for data from my post-graduate researches. Hosted on Heroku.
+        </div>
+        <ul>
+            <li>Tech stack: Spring Data, Spring Web, Project Lombock, Thymeleaf, Java Script, CSS, HTML,
+                Chart.js.
+            </li>
+        </ul>
+    </dd>
+
+    <dt><strong>Smart Home App</strong> <br>04/2021 - Present</dt>
+    <dd>
+        <div style="margin-left: 5px">
+            Smart home app. Application that allows me and my family to monitor home conditions and control some routines.
+        </div>
+        <ul>
+            <li>Tech stack: Spring Data, Spring Web, Arduino, Project Lombock, Log4J2, JavaScript (React), CSS, Chart.js, OpenWeatherMap.
+            </li>
+        </ul>
+    </dd>
+</dl>
+<h2 id="extra">Extra</h2>
+<dl>
+    <dt><strong>Human Languages</strong></dt>
+    <dd>
+        <ul>
+            <li>English (Full Professional Proficiency)</li>
+            <li>Polish (Limited Working Proficiency)<br/>
+            </li>
+            <li>Ukrainian (Native or Bilingual Proficiency)</li>
+            <li>Russian (Native or Bilingual Proficiency)</li>
+        </ul>
+    </dd>
+    <dt><strong>Hobbies</strong></dt>
+    <dd>
+        <ul>
+            <li>Programming</li>
+            <li>DIYs</li>
+            <li>Games and Game development</li>
+            <li>Cooking</li>
+            <li>Books</li>
+        </ul>
+    </dd>
+</dl>
+<hr/>
+<blockquote>
+    <p><a href="mailto:i.horchynskyi@gmail.com">i.horchynskyi@gmail.com</a> • +38 063 977 3415 • 25 years old<br/>
+        Odesa, Ukraine</p>
+</blockquote>
+</body>
+</html>
